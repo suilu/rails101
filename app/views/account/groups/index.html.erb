@@ -15,15 +15,12 @@
 
     <tbody>
       <% @groups.each do |group| %>
-        <tr>
-          <td> # </td>
-          <td> <%= link_to(group.title, group_path(group)) %> </td>
-          <td><%= render_group_description(group) %></td>
-          <td> <%= group.user.email %> </td>
-          <td> <%= group.description %> </td>
-          <td> <%= group.posts.count %> </td>
-          <td> <%= group.updated_at %> </td>
-        </tr>
+      <tr>
+      <td>#</td>
+      <td>Title</td>
+      <td>Description</td>
+      <td>Creator </td>
+    </tr>
       <% end %>
     </tbody>
   </table>
